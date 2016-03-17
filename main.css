@@ -1,0 +1,12 @@
+.ts-logo {
+	border-radius: 50px;
+}
+.coupling-buttons {
+	display: flex;
+	justify-content: space-around;
+}
+.coupling-buttons button {
+	border: black 1px solid !important;
+}
+.coupling-chart {
+}
