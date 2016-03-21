@@ -109,14 +109,34 @@
                 </div>
             </div>
         </div>
-        <p class="coupling-buttons">
-            <button type="button" class="wow bounceIn btn btn-default btn-lg" onclick="$('.coupling-graph').attr('src','process_map/graph.php')">Tese Suite <i class="fa fa-arrows-h"></i> Test Suite</button>
-            <button type="button" class="wow bounceIn btn btn-default btn-lg" onclick="$('.coupling-graph').attr('src','process_map/graph.php')">Tese Suite <i class="fa fa-arrows-h"></i> Test Case</button>
-            <button type="button" class="wow bounceIn btn btn-default btn-lg" onclick="$('.coupling-graph').attr('src','process_map/graph.php')">Tese Suite <i class="fa fa-arrows-h"></i> Keyword</button>
-            <button type="button" class="wow bounceIn btn btn-default btn-lg" onclick="$('.coupling-graph').attr('src','process_map/graph.php')">Tese Case <i class="fa fa-arrows-h"></i> Test Case</button>
-            <button type="button" class="wow bounceIn btn btn-default btn-lg" onclick="$('.coupling-graph').attr('src','process_map/graph.php')">Tese Case <i class="fa fa-arrows-h"></i> Keyword</button>
-            <button type="button" class="wow bounceIn btn btn-default btn-lg" onclick="$('.coupling-graph').attr('src','process_map/graph.php')">Keyword <i class="fa fa-arrows-h"></i> Keyword</button>
-        </p>
+        <!-- Large button group -->
+        <div class="coupling-buttons">
+            <div class="btn-group">
+              <button class="btn btn-default btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Large button <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu">
+                <li onclick="$('.coupling-graph').attr('src','process_map/graph.php?dataset=script')">
+                    <a>Tese Suite <i class="fa fa-arrows-h"></i> Test Suite</a>
+                </li>
+                <li onclick="$('.coupling-graph').attr('src','process_map/graph.php')">
+                    <a>Tese Suite <i class="fa fa-arrows-h"></i> Test Case</a>
+                </li>
+                <li onclick="$('.coupling-graph').attr('src','process_map/graph.php')">
+                    <a>Tese Suite <i class="fa fa-arrows-h"></i> Keyword</a>
+                </li>
+                <li onclick="$('.coupling-graph').attr('src','process_map/graph.php')">
+                    <a>Tese Case <i class="fa fa-arrows-h"></i> Test Case</a>
+                </li>
+                <li onclick="$('.coupling-graph').attr('src','process_map/graph.php')">
+                    <a>Tese Case <i class="fa fa-arrows-h"></i> Keyword</a>
+                </li>
+                <li onclick="$('.coupling-graph').attr('src','process_map/graph.php')">
+                    <a>Keyword <i class="fa fa-arrows-h"></i> Keyword</a>
+                </li>
+              </ul>
+            </div>
+        </div>
         <iframe class="coupling-graph" src="process_map/graph.php?dataset=script" width="100%" height="900px" frameborder="0" scrolling="no"></iframe>
     </section>
     
